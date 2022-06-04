@@ -41,7 +41,7 @@
     "@types/dedent": "^0.7.0",
     "@types/fs-extra": "^8.0.1",
     "@types/json5": "0.0.30",
-    "@types/node": "^13.1.7",
+    "@types/node": "^13.13.52",
     "@types/resolve": "^1.17.1",
     "@types/semver": "^7.3.4",
     "@types/yargs": "^15.0.4"
