@@ -33,7 +33,7 @@
     "@types/jest": "^24.9.1",
     "@types/yargs": "^12.0.14",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
-    "@typescript-eslint/parser": "^4.6.1",
+    "@typescript-eslint/parser": "^4.33.0",
     "commander": "^2.20.3",
     "dat.gui": "^0.7.5",
     "eslint": "^7.2.0",
