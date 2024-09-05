@@ -16,47 +16,51 @@
     "build-declaration": "gulp build-declarations",
     "build-api-json": "gulp build-api-json -i index.ts -o ./3d-api-docs/tempJson",
     "build-api": "npm run build-api-json && gulp build-3d-api -i index.ts -o ./3d-api-docs -j ./3d-api-docs/tempJson",
-    "test": "gulp test"
+    "test": "gulp test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cocos-creator/engine.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/preset-env": "7.8.7",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "7.23.3",
     "@cocos/babel-preset-cc": "2.2.0",
-    "@cocos/build-engine": "4.2.7",
+    "@cocos/build-engine": "4.4.3",
     "@cocos/typedoc-plugin-internal-external": "^1.0.1",
     "@cocos/typedoc-plugin-localization": "^1.0.0",
     "@types/fs-extra": "^5.0.4",
-    "@types/jest": "^24.9.1",
+    "@types/jest": "^27.4.1",
     "@types/yargs": "^12.0.14",
-    "@typescript-eslint/eslint-plugin": "^4.6.1",
-    "@typescript-eslint/parser": "^4.6.1",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^8.3.0",
     "commander": "^2.20.3",
     "dat.gui": "^0.7.5",
-    "eslint": "^7.2.0",
+    "eslint": "^8.46.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.28.0",
     "fs-extra": "^7.0.1",
-    "gulp": "^4.0.2",
-    "http-server": "^0.12.3",
-    "jest": "^26.6.3",
+    "gulp": "^5.0.0",
+    "http-server": "^14.1.1",
+    "jest": "^29.7.0",
     "spectorjs": "^0.9.15",
     "stats.js": "^0.17.0",
-    "ts-jest": "^26.5.4",
-    "typedoc": "^0.17.7",
+    "ts-jest": "^29.1.1",
+    "typedoc": "^0.22.13",
     "typedoc-plugin-external-module-name": "^4.0.3",
     "typescript": "^4.2.3",
     "vconsole": "^3.3.0",
-    "yargs": "^12.0.5"
+    "yargs": "^17.6.0"
   },
   "dependencies": {
     "@cocos/ammo": "1.1.1",
     "@cocos/box2d": "1.0.1",
     "@cocos/cannon": "1.2.3",
     "@cocos/dragonbones-js": "^1.0.1",
-    "@cocos/physx": "1.0.2"
-  }
+    "@cocos/physx": "1.0.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
